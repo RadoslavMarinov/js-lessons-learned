@@ -1,5 +1,5 @@
 #slider-container-outer {
-	overflow: hidden;
+  overflow: hidden;
   background-color: khaki;
   margin-left: 400px;
   width: 600px;
@@ -7,23 +7,20 @@
 
 #slider-container {
   background-color: rgb(173, 166, 102);
-	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: row;
-  transform: translateX(-200px);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 /* CSS transition applied when translation of items happen */
-.slider-container-transition{
-	/* transition: transform 0.7s ease-in-out; */
+.slider-container-transition {
+  transition: transform 0.7s ease-in-out;
 }
 
 .slider-item {
-	width: 200px;
-	flex-shrink: 0;
+  flex-shrink: 0;
 }
 
-.slider-item:nth-child(even) {
-  background-color: lightblue;
-
+.move-back {
+  transform: translateX(-200px);
 }
