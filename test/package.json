@@ -1,0 +1,25 @@
+{
+  "name": "@user-name/repo-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RadoslavMarinov/custom-npm-package.git"
+  },
+  "keywords": [
+    "kw"
+  ],
+  "author": "rkm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RadoslavMarinov/custom-npm-package/issues"
+  },
+  "homepage": "https://github.com/RadoslavMarinov/custom-npm-package#readme",
+  "dependencies": {
+    "@radoslavmarinov/custom-npm-package": "^1.0.0"
+  }
+}

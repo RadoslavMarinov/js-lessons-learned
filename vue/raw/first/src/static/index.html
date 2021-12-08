@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="./index.js"></script>
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <h1>Communication between parent and child in Vue</h1>
+  <!-- SCRIPTS -->
+  <div id="vue-app" v-cloak>
+    <p class="total-counter">{{totalCount}}</p>
+    <button-counter  :bus="bus" v-on:incremented="onChildIncr"></button-counter>
+    <button-counter  :bus="bus" v-on:incremented="onChildIncr"></button-counter>
+    <button-counter  :bus="bus" v-on:incremented="onChildIncr"></button-counter>
+    <button-counter  :bus="bus" v-on:incremented="onChildIncr"></button-counter>
+    <button class="big-btn"  v-on:click="onBigBoyClick">RESET</button>
+
+  </div>
+<script>
+  window.addEventListener('load',(e) => {
+    console.log(vueApp);
+  })
+</script>
+</body>
+
+</html>

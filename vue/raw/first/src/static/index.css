@@ -1,0 +1,23 @@
+.big-btn {
+  height: 4em;
+  width: 8em;
+  display: block;
+  background-color: #67fb80;
+  margin: 1em;
+}
+
+.total-counter {
+  font-size: 55px;
+  font-weight: 700;
+  margin-left: 2em;
+  color: blueviolet;
+  margin-right: auto;
+}
+
+.small-btn {
+  height: 42px;
+  width: 150px;
+  background-color: #fbbb67;
+  margin: 20px;
+  font-size: 30px;
+}
