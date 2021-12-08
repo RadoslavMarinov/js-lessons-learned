@@ -57,3 +57,15 @@ carouselSlide.addEventListener('transitionend', (e) => {
     }
   }
 })
+
+window.addEventListener('load', (e) => {
+  setInterval(() => {
+    if( counter > carouselImages.length - 2 ) return;
+    lastSwitch = "left"
+    carouselSlide.style.transition = "transform .7s ease-in-out"
+    counter++;
+    console.log(`Counter = ${counter}, all = ${carouselImages.length}, leftShiftAt=${leftShiftAt}`)
+    // const size = 200// carouselImages[counter].clientWidth
+    carouselSlide.style.transform = `translateX(${-size * counter}px)`
+  }, 2000);
+})
