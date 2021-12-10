@@ -16,6 +16,11 @@
 }
 
 .img-cont {
-  width: 200px;
-  height: 100px;
+  min-width: 350px;
+  display: flex;
+  align-items: center;
+}
+
+.img-cont > img {
+  margin: auto;
 }
