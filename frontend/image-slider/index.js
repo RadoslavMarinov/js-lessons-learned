@@ -1,8 +1,10 @@
 
 window.addEventListener('load', (e) => {
 
-
+  //  === CONFIGURATIONS 
   const imageCopies = 3
+  const slideDelayMs  =  2000
+
   replicateSiblings('.carousel-slide .img-cont', imageCopies - 1); // The origina image-set already exists in HTML
 
   const carouselSlide = document.querySelector('.carousel-slide')
@@ -61,15 +63,14 @@ window.addEventListener('load', (e) => {
 
 
 
-  // setInterval(() => {
-  //   if( counter > carouselImages.length - 2 ) return;
-  //   lastSwitch = "left"
-  //   carouselSlide.style.transition = "transform .7s ease-in-out"
-  //   counter++;
-  //   console.log(`Counter = ${counter}, all = ${carouselImages.length}, shiftBackAt=${shiftBackAt}`)
-  //   // const size = 200// carouselImages[counter].clientWidth
-  //   carouselSlide.style.transform = `translateX(${-size * counter}px)`
-  // }, 2000);
+  setInterval(() => {
+    if( counter > carouselImages.length - 2 ) return;
+    lastSwitch = "forward"
+    carouselSlide.style.transition = "transform .7s ease-in-out"
+    counter++;
+    console.log(`Counter = ${counter} shiftBackAt=${shiftBackAt}`)
+    carouselSlide.style.transform = `translateX(${-size * counter}px)`
+  }, slideDelayMs);
 })
 
 function replicateSiblings(querySelector = '.carousel-slide .img-cont', times = 2){
