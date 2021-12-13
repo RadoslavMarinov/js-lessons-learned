@@ -7,7 +7,6 @@
   width: 100%;
   margin: auto;
   overflow: hidden;
-  border: 3px solid black;
 }
 
 .carousel-slide {
@@ -16,11 +15,12 @@
 }
 
 .img-cont {
-  min-width: 350px;
+  min-width: 300px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.img-cont > img {
+.img-cont > a > img {
   margin: auto;
 }
