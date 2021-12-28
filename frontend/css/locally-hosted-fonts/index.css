@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "comic_reliefregular";
+  src: url("./fonts/ComicRelief-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "mathelete"; /* You can specify custom name */
+  src: url("./fonts/Mathlete-BulkySlant-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "mathelete";
+}
+
+p {
+  font-family: "comic_reliefregular";
+}
